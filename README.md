@@ -4,4 +4,4 @@ An auto-generated web landing page for Developer Nation newsletter send-outs whi
 ## Usage 
 
 - Using Docker : 
-```docker run -p 5000:5000 iayanpahwa/archive.nl:latest-amd64``````
+```docker run -p 5000:5000 iayanpahwa/archive.nl:latest-amd64```
