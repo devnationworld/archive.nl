@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DN Newsletter Archives</title>
+    <!-- Add your styles or link to an external stylesheet here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #454858;
+        }
+
+        header {
+            background-color: #FAF9F6;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.developernation.net/static/logo-7555f87af0d77b77cf7ff284e5549463.svg" alt="Developer Nation" height="100">
+        <h1 style="color:rgb(99, 43, 223);">Newsletter Archives</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Developer Nation Newsletters : Past Send-Outs</th>
+            </tr>
+        </thead>
+        <tbody>
+                {% for data in url|reverse %}
+                {% set list1 = data.split('/') %}
+                <tr>
+                <td><a href={{data}} target="_blank">Newsletter send-out: #{{list1[3]}}</a></td>
+            </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
