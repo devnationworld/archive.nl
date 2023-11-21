@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/")
 def links():
     i = 0
-    first = 320
+    first = 316
     baseUrl = "https://content.developernation.net/"
     returnVal = 200
     url = []
