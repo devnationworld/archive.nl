@@ -8,8 +8,8 @@ app = Flask(__name__)
 @app.route("/")
 def links():
     i = 0
-    first = 316
-    baseUrl = "https://content.developernation.net/"
+    first = 329
+    baseUrl = "https://www.developernation.net/newsletter/"
     returnVal = 200
     url = []
     #     while returnVal != 404 and i <= 6:

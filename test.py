@@ -2,8 +2,8 @@ import requests
 
 i = 0
 first = 315
-baseUrl = "https://content.developernation.net/"
-returnVal = 200
+baseUrl = "https://www.developernation.net/newsletter/"
+returnVal = 329
 url = []
 
 while returnVal != 404:
